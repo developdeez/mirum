@@ -1,33 +1,112 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex: 2;
+  background-color: #61dafb;
+  align-content: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.small {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  display: flex;
+  flex-grow: 6;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.footer {
+  height: 5vh;
+  background-color: #4dd2f3;
+}
+
+.carousel {
+  display: flex;
+  flex: 6;
+  background-color: #fff;
+}
+
+.slider {
+  display: flex;
+  background-color: #fff;
+}
+
+.sliderContainer {
+  flex: 5;
+  overflow-x: hidden;
+  margin-top: 40px;
+}
+
+.arrow {
+  cursor: pointer;
+  background-color: #fff;
+  justify-content: space-around;
+  align-self: center;
+  font-size: 130px;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.paginator {
+  display: flex;
+  flex: 1;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.dot {
+  color: grey;
+}
+.selected {
+  color: red;
+}
+
+.item {
+  display: flex;
+  min-width: 400px;
+  flex-direction: column;
+  margin: 3%;
+  cursor: pointer;
+}
+
+.item .image {
+  min-width: 400px;
+  min-height: 400px;
+  background-color: rgb(25, 181, 209);
+  background-size: cover;
+}
+
+.item .title {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.item .description {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.detailsThumb {
+  background-color: grey;
+  width: 140px;
+  height: 70px;
+  margin: 1%;
 }
